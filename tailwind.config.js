@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         yellow: '#efc603',
         'anaranjado': '#451a03',
+        'bluey' : '#6366f1'
       },
       keyframes: {
         typing: {

@@ -2,6 +2,7 @@ import { StaticImageData } from 'next/image';
 import { FC, ForwardRefExoticComponent, SVGProps } from 'react';
 
 import { IconProps } from '../components/Icon/Icon';
+import { Languages } from 'next/dist/lib/metadata/types/alternative-urls-types';
 
 export interface HomepageMeta {
   title: string;
@@ -91,6 +92,20 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+}
+
+
+
+export interface programmingLanguages{
+  imageSrc?: string | StaticImageData;
+  items: Language[];
+  
+}
+
+export interface Language {
+  name: string;
+  image?: string;
+  
 }
 
 /**

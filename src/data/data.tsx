@@ -13,6 +13,11 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import MazeSolver from '../images/portfolio/MazeSolver.png';
+import R from '../images/portfolio/R.png';
+import AStarNevegator from '../images/portfolio/AStarNavegator.png';
+import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
+import infochange from '../images/portfolio/InfocChange.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -24,7 +29,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic2.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import testimonialImage from '../images/testimonial.jpeg';
 import {
   About,
   ContactSection,
@@ -34,16 +39,16 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
+  programmingLanguages
 } from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ant´s portfolio ',
+  description: "Ant Baena personal portfolio",
 };
 
 /**
@@ -55,9 +60,9 @@ export const SectionId = {
   Contact: 'contact',
   Portfolio: 'portfolio',
   Resume: 'resume',
-  Skills: 'skills',
+  Competences: 'Competences',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Skills: 'Skills',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -113,7 +118,7 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-export const skills: SkillGroup[] = [
+export const Competences: SkillGroup[] = [
   {
     name: 'Spoken languages',
     skills: [
@@ -147,7 +152,7 @@ export const skills: SkillGroup[] = [
         name: 'C++',
         level: 5,
       },
-      
+
     ],
   },
   {
@@ -191,40 +196,41 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: 'LiveTrafficEye',
+    description: 'Real-Time Traffic Monitoring and Analysis using Live Video Streams using Python, Computer Vision and AI.',
+    url: 'https://github.com/antbaena/LiveTrafficEye',
+    image: LiveTrafficEye,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: 'A-Star-Navigator',
+    description: 'Java implementation of the A* algorithm, ideal for finding optimal paths in graphs and maps.',
+    url: 'https://github.com/antbaena/A-Star-Navigator',
+    image: AStarNevegator,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: 'Fake-Accounts-Instagram',
+    description: 'Detect fake Instagram accounts with data analysis and regression models in R.',
+    url: 'https://github.com/antbaena/Fake-Accounts-Instagram',
+    image: R,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
+    title: 'Orcast',
+    description: '2D game developed using Unity and C#, featuring an exciting and vibrant storyline.',
     url: 'https://reactresume.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
+    title: 'MazeSolver',
+    description: 'Java Gui aplication with multiplles opciones para crear y resolver laberintos',
+    url: 'https://github.com/antbaena/MazeSolver',
+    image: MazeSolver,
+  },
+    
+  {
+    title: 'InfoChange',
+    description: 'Simulation of a cryptocurrency exchange with real-time data using Node.js and React.',
+    url: 'https://infochange.me/',
+    image: infochange,
   },
   {
     title: 'Project title 7',
@@ -263,67 +269,32 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2021-2025',
+    location: 'Universidad de Málaga',
+    title: 'Bachelor of software engineering',
+    content: <p>During my time at UMA, I gained a solid foundation in Software Engineering, learning to develop and manage complex software applications.
+      I acquired valuable skills in project management, teamwork, and problem-solving.
+      My education also enhanced my ability to adapt to new technologies and apply analytical thinking in various situations.</p>,
   },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'April 2024 - Present',
+    location: 'MAPIR',
+    title: 'Research Team Member',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Optimized systems and developed complex human-robot interaction systems using Python, C++, ROS2, and CUDA.
+        Collaborated in team projects to implement cloud technologies, enhancing robotic software performance and scalability.
+        Focused on creating efficient and advanced solutions for mobile robots while actively contributing to group dynamics and successful project outcomes.
       </p>
     ),
   },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
+
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
@@ -365,3 +336,25 @@ export const socialLinks: Social[] = [
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/antonio-ca%C3%B1ete-baena-b61a5a235/' },
 
 ];
+
+// data.tsx
+
+export const Skills: programmingLanguages = {
+  imageSrc: testimonialImage,
+  items: [
+    { name: 'Java', image: 'https://abrudz.github.io/logos/Java.svg' },
+    { name: 'C++', image: 'https://abrudz.github.io/logos/CPlusPlus.svg' },
+    { name: 'C#', image: 'https://abrudz.github.io/logos/CSharp.svg' },
+    { name: 'Python', image: 'https://abrudz.github.io/logos/Python.svg' },
+    { name: 'C', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/c.svg' },
+    { name: 'JavaScript', image: 'https://abrudz.github.io/logos/JS.svg' },
+    { name: 'TypeScript', image: 'https://abrudz.github.io/logos/TypeScript.svg' },
+    { name: 'Angular', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/angular.svg' },
+    { name: 'React', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg' },
+    { name: 'Spring', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/spring.svg' },
+    { name: 'R', image: 'https://abrudz.github.io/logos/R.svg' },
+    { name: '.NET', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png' },
+    
+  ],
+
+};
