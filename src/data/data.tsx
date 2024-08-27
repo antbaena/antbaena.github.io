@@ -12,7 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import backgroundImage from '../images/backgroundImage.jpg';
-//import heroImage from '../images/headerBackground.jpg';
+import heroImage from '../images/landscape.jpg';
 import AStarNavigator from '../images/portfolio/AStarNavegator.png';
 import infochange from '../images/portfolio/InfocChange.png';
 import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
@@ -63,7 +63,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: MazeSolver,
+  imageSrc: heroImage,
   name: `Hi! I'm Ant.`,
   description: (
     <>
