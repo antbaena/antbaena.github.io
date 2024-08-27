@@ -12,7 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import backgroundImage from '../images/backgroundImage.jpg';
-import heroImage from '../images/header-background.jpg';
+import heroImage from '../images/headerbackground.jpg';
 import AStarNavigator from '../images/portfolio/AStarNavegator.png';
 import infochange from '../images/portfolio/InfocChange.png';
 import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
