@@ -11,18 +11,17 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import heroImage from '../images/header-background.jpg';
-import MazeSolver from '../images/portfolio/MazeSolver.png';
-import R from '../images/portfolio/R.png';
-import AStarNavigator from '../images/portfolio/AStarNavegator.png';
-import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
-import infochange from '../images/portfolio/InfocChange.png';
-import tictac from "../images/portfolio/tictactouch.png"
-import profilepic from '../images/profilepic2.jpg';
 import backgroundImage from '../images/backgroundImage.jpg';
-import passwordGenie from "../images/portfolio/passwordGenie.png"
-import orcast from "../images/portfolio/orcast.png"
-
+import heroImage from '../images/header-background.jpg';
+import AStarNavigator from '../images/portfolio/AStarNavegator.png';
+import infochange from '../images/portfolio/InfocChange.png';
+import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
+import MazeSolver from '../images/portfolio/MazeSolver.png';
+import orcast from '../images/portfolio/orcast.png';
+import passwordGenie from '../images/portfolio/passwordGenie.png';
+import R from '../images/portfolio/R.png';
+import tictac from '../images/portfolio/tictactouch.png';
+import profilepic from '../images/profilepic2.jpg';
 import {
   About,
   ContactSection,
@@ -30,19 +29,18 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  programmingLanguages,
   SkillGroup,
   Social,
   TimelineItem,
-  programmingLanguages
 } from './dataDef';
-
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Ant´s portfolio ',
-  description: "Ant Baena personal portfolio",
+  description: 'Ant Baena personal portfolio',
 };
 
 /**
@@ -69,11 +67,10 @@ export const heroData: Hero = {
   name: `Hi! I'm Ant.`,
   description: (
     <>
-
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Software Engineering</strong> student at the University of Malaga. I have a passion for Computer Vision, growing plants, and Video Games.
+        I'm a <strong className="text-stone-100">Software Engineering</strong> student at the University of Malaga. I
+        have a passion for Computer Vision, growing plants, and Video Games.
       </p>
-
     </>
   ),
   actions: [
@@ -100,12 +97,12 @@ export const aboutData: About = {
    I’m currently exploring Computer Vision, Mobile Apps, and Machine Learning.
    I thrive in collaborative environments and enjoy working as part of a team to tackle complex problems and drive innovation.`,
   aboutItems: [
-    { label: 'Location', text: 'Málaga, Spain', Icon: MapIcon },
-    { label: 'Age', text: '21', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Spanish', Icon: FlagIcon },
-    { label: 'Interests', text: 'Botany, Artificial Intillegence, hiking ', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Málaga', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'MAPIR research group.', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Málaga, Spain', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Spanish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Botany, Artificial Intillegence, hiking ', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Málaga', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'MAPIR research group.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -136,8 +133,7 @@ export const Competences: SkillGroup[] = [
       {
         name: 'Java',
         level: 9,
-      }
-      ,
+      },
       {
         name: 'Python',
         level: 8,
@@ -146,7 +142,6 @@ export const Competences: SkillGroup[] = [
         name: 'C++',
         level: 5,
       },
-
     ],
   },
   {
@@ -191,7 +186,8 @@ export const Competences: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'LiveTrafficEye',
-    description: 'Real-time traffic monitoring and analysis using live video streams with Python, computer vision, and AI. (In development)',
+    description:
+      'Real-time traffic monitoring and analysis using live video streams with Python, computer vision, and AI. (In development)',
     url: 'https://github.com/antbaena/LiveTrafficEye',
     image: LiveTrafficEye,
   },
@@ -203,7 +199,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Fake-Accounts-Instagram',
-    description: 'Detect fake Instagram accounts by leveraging real datasets and applying regression models in R. This project includes a comprehensive analysis, thoroughly explained step-by-step, to highlight the methodology and insights gained from the data.',
+    description:
+      'Detect fake Instagram accounts by leveraging real datasets and applying regression models in R. This project includes a comprehensive analysis, thoroughly explained step-by-step, to highlight the methodology and insights gained from the data.',
     url: 'https://github.com/antbaena/Fake-Accounts-Instagram',
     image: R,
   },
@@ -227,16 +224,18 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'PasswordGenie',
-    description: 'Web project developed in Angular that provides a web tool for generating customizable passwords and tools for checking password security.',
+    description:
+      'Web project developed in Angular that provides a web tool for generating customizable passwords and tools for checking password security.',
     url: 'https://antbaena.github.io/PasswordGenie/',
     image: passwordGenie,
   },
   {
     title: 'TicTacTouch',
-    description: 'Classic tic-tac-toe game made in C++ using .NET with an intuitive GUI and different levels of difficulties. (In development)',
+    description:
+      'Classic tic-tac-toe game made in C++ using .NET with an intuitive GUI and different levels of difficulties. (In development)',
     url: 'https://github.com/antbaena/TicTacTouch',
     image: tictac,
-  }
+  },
 ];
 
 /**
@@ -247,11 +246,15 @@ export const education: TimelineItem[] = [
     date: '2021-2025',
     location: 'Universidad de Málaga',
     title: 'Bachelor of software engineering',
-    content: <p>During my time at UMA, I gained a solid foundation in Software Engineering, learning to develop and manage complex software applications.
-      I acquired valuable skills in project management, teamwork, and problem-solving.
-      My education also enhanced my ability to adapt to new technologies and apply analytical thinking in various situations.</p>,
+    content: (
+      <p>
+        During my time at UMA, I gained a solid foundation in Software Engineering, learning to develop and manage
+        complex software applications. I acquired valuable skills in project management, teamwork, and problem-solving.
+        My education also enhanced my ability to adapt to new technologies and apply analytical thinking in various
+        situations.
+      </p>
+    ),
   },
-
 ];
 
 export const experience: TimelineItem[] = [
@@ -262,14 +265,13 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Optimized systems and developed complex human-robot interaction systems using Python, C++, ROS2, and CUDA.
-        Collaborated in team projects to implement cloud technologies, enhancing robotic software performance and scalability.
-        Focused on creating efficient and advanced solutions for mobile robots while actively contributing to group dynamics and successful project outcomes.
+        Collaborated in team projects to implement cloud technologies, enhancing robotic software performance and
+        scalability. Focused on creating efficient and advanced solutions for mobile robots while actively contributing
+        to group dynamics and successful project outcomes.
       </p>
     ),
   },
-
 ];
-
 
 /**
  * Contact section
@@ -306,10 +308,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/antbaena' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/26955826/antbaena' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/antonio-ca%C3%B1ete-baena-b61a5a235/' },
-
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/antbaena'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/26955826/antbaena'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/antonio-ca%C3%B1ete-baena-b61a5a235/'},
 ];
 
 // data.tsx
@@ -317,19 +318,37 @@ export const socialLinks: Social[] = [
 export const Skills: programmingLanguages = {
   imageSrc: backgroundImage,
   items: [
-    { name: 'Java', image: 'https://abrudz.github.io/logos/Java.svg' },
-    { name: 'C++', image: 'https://abrudz.github.io/logos/CPlusPlus.svg' },
-    { name: 'C#', image: 'https://abrudz.github.io/logos/CSharp.svg' },
-    { name: 'Python', image: 'https://abrudz.github.io/logos/Python.svg' },
-    { name: 'C', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/c.svg' },
-    { name: 'JavaScript', image: 'https://abrudz.github.io/logos/JS.svg' },
-    { name: 'TypeScript', image: 'https://abrudz.github.io/logos/TypeScript.svg' },
-    { name: 'Angular', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/angular.svg' },
-    { name: 'React', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg' },
-    { name: 'Spring', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/spring.svg' },
-    { name: 'R', image: 'https://abrudz.github.io/logos/R.svg' },
-    { name: '.NET', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png' },
-
+    {name: 'Java', image: 'https://abrudz.github.io/logos/Java.svg'},
+    {name: 'C++', image: 'https://abrudz.github.io/logos/CPlusPlus.svg'},
+    {name: 'C#', image: 'https://abrudz.github.io/logos/CSharp.svg'},
+    {name: 'Python', image: 'https://abrudz.github.io/logos/Python.svg'},
+    {
+      name: 'C',
+      image:
+        'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/c.svg',
+    },
+    {name: 'JavaScript', image: 'https://abrudz.github.io/logos/JS.svg'},
+    {name: 'TypeScript', image: 'https://abrudz.github.io/logos/TypeScript.svg'},
+    {
+      name: 'Angular',
+      image:
+        'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/angular.svg',
+    },
+    {
+      name: 'React',
+      image:
+        'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg',
+    },
+    {
+      name: 'Spring',
+      image:
+        'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/spring.svg',
+    },
+    {name: 'R', image: 'https://abrudz.github.io/logos/R.svg'},
+    {
+      name: '.NET',
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png',
+    },
   ],
-
 };

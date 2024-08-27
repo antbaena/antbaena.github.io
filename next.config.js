@@ -24,6 +24,7 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -34,6 +35,9 @@ const nextConfig = {
       },
     ],
   },
+  output: 'export',
+  basePath: '/antbaena.github.io', // Reemplaza REPO_NAME con el nombre de tu repositorio
+  assetPrefix: '/antbaena.github.io', // Reemplaza REPO_NAME con el nombre de tu repositorio
 };
 
 module.exports = nextConfig;
