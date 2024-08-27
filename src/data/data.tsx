@@ -12,24 +12,17 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import heroImage from '../images/header-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import MazeSolver from '../images/portfolio/MazeSolver.png';
 import R from '../images/portfolio/R.png';
-import AStarNevegator from '../images/portfolio/AStarNavegator.png';
+import AStarNavigator from '../images/portfolio/AStarNavegator.png';
 import LiveTrafficEye from '../images/portfolio/LiveTrafficEye.jpg';
 import infochange from '../images/portfolio/InfocChange.png';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import tictac from "../images/portfolio/tictactouch.png"
 import profilepic from '../images/profilepic2.jpg';
-import testimonialImage from '../images/testimonial.jpeg';
+import backgroundImage from '../images/backgroundImage.jpg';
+import passwordGenie from "../images/portfolio/passwordGenie.png"
+import orcast from "../images/portfolio/orcast.png"
+
 import {
   About,
   ContactSection,
@@ -42,6 +35,7 @@ import {
   TimelineItem,
   programmingLanguages
 } from './dataDef';
+
 
 /**
  * Page meta data
@@ -197,7 +191,7 @@ export const Competences: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'LiveTrafficEye',
-    description: 'Real-Time Traffic Monitoring and Analysis using Live Video Streams using Python, Computer Vision and AI.',
+    description: 'Real-time traffic monitoring and analysis using live video streams with Python, computer vision, and AI. (In development)',
     url: 'https://github.com/antbaena/LiveTrafficEye',
     image: LiveTrafficEye,
   },
@@ -205,27 +199,26 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'A-Star-Navigator',
     description: 'Java implementation of the A* algorithm, ideal for finding optimal paths in graphs and maps.',
     url: 'https://github.com/antbaena/A-Star-Navigator',
-    image: AStarNevegator,
+    image: AStarNavigator,
   },
   {
     title: 'Fake-Accounts-Instagram',
-    description: 'Detect fake Instagram accounts with data analysis and regression models in R.',
+    description: 'Detect fake Instagram accounts by leveraging real datasets and applying regression models in R. This project includes a comprehensive analysis, thoroughly explained step-by-step, to highlight the methodology and insights gained from the data.',
     url: 'https://github.com/antbaena/Fake-Accounts-Instagram',
     image: R,
   },
   {
     title: 'Orcast',
     description: '2D game developed using Unity and C#, featuring an exciting and vibrant storyline.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
+    url: 'https://www.yellowbeavers.com/',
+    image: orcast,
   },
   {
     title: 'MazeSolver',
-    description: 'Java Gui aplication with multiplles opciones para crear y resolver laberintos',
+    description: 'Java GUI application with multiple options to create and solve mazes. (In development)',
     url: 'https://github.com/antbaena/MazeSolver',
     image: MazeSolver,
   },
-    
   {
     title: 'InfoChange',
     description: 'Simulation of a cryptocurrency exchange with real-time data using Node.js and React.',
@@ -233,35 +226,17 @@ export const portfolioItems: PortfolioItem[] = [
     image: infochange,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
+    title: 'PasswordGenie',
+    description: 'Web project developed in Angular that provides a web tool for generating customizable passwords and tools for checking password security.',
+    url: 'https://antbaena.github.io/PasswordGenie/',
+    image: passwordGenie,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+    title: 'TicTacTouch',
+    description: 'Classic tic-tac-toe game made in C++ using .NET with an intuitive GUI and different levels of difficulties. (In development)',
+    url: 'https://github.com/antbaena/TicTacTouch',
+    image: tictac,
+  }
 ];
 
 /**
@@ -340,7 +315,7 @@ export const socialLinks: Social[] = [
 // data.tsx
 
 export const Skills: programmingLanguages = {
-  imageSrc: testimonialImage,
+  imageSrc: backgroundImage,
   items: [
     { name: 'Java', image: 'https://abrudz.github.io/logos/Java.svg' },
     { name: 'C++', image: 'https://abrudz.github.io/logos/CPlusPlus.svg' },
@@ -354,7 +329,7 @@ export const Skills: programmingLanguages = {
     { name: 'Spring', image: 'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/spring.svg' },
     { name: 'R', image: 'https://abrudz.github.io/logos/R.svg' },
     { name: '.NET', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png' },
-    
+
   ],
 
 };

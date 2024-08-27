@@ -2,7 +2,6 @@ import { StaticImageData } from 'next/image';
 import { FC, ForwardRefExoticComponent, SVGProps } from 'react';
 
 import { IconProps } from '../components/Icon/Icon';
-import { Languages } from 'next/dist/lib/metadata/types/alternative-urls-types';
 
 export interface HomepageMeta {
   title: string;

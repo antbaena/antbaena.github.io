@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         yellow: '#efc603',
         'anaranjado': '#451a03',
+        'anaranjadoOscuro': '#0a0300',
+        'anaranjadoCasiOscuro': '#110500',
+
         'bluey' : '#6366f1'
       },
       keyframes: {
