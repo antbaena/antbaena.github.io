@@ -35,9 +35,10 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export', // 👈 esto le dice a Next que genere HTML estático
-  basePath: '/antbaena.github.io',  // 👈 el nombre de tu repo
-  assetPrefix: '/antbaena.github.io/',
+  output: 'export', 
+  
+  // basePath: '/antbaena.github.io',  
+  // assetPrefix: '/antbaena.github.io/',
 };
 
 module.exports = nextConfig;
