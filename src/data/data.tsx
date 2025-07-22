@@ -20,6 +20,7 @@ import MazeSolver from '../images/portfolio/MazeSolver.png';
 import orcast from '../images/portfolio/orcast.png';
 import passwordGenie from '../images/portfolio/passwordGenie.png';
 import R from '../images/portfolio/R.png';
+import SanchoROS2 from '../images/portfolio/sancho.jpg';
 import tictac from '../images/portfolio/tictactouch.png';
 import profilepic from '../images/profilepic2.jpg';
 import {
@@ -68,17 +69,26 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Software Engineering</strong> student at the University of Malaga. I
-        have a passion for Computer Vision, growing plants, and Video Games.
+        I'm a <strong className="text-stone-100">Software Engineering graduate</strong> currently pursuing an M.Sc. in
+        Artificial Intelligence and Software Engineering at the University of Málaga. I'm passionate about{' '}
+        <strong className="text-stone-100">Computer Vision, Human–Robot Interaction</strong>, and robotics applied to
+        healthcare. In my spare time, I enjoy growing plants and playing video games.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/public/resume.pdf',
+      href: '/Ant_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
+    },
+    {
+      //Research profile link
+      href: 'https://mapir.isa.uma.es/mapirwebsite/?p=4094',
+      text: 'Researcher Profile',
+      primary: false,
+      Icon: AcademicCapIcon,
     },
     {
       href: `#${SectionId.Contact}`,
@@ -93,14 +103,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I’m a Software Engineering student at the University of Malaga with a strong passion for programming. Proficient in Java, Python, C++, and C#,
-   I’m currently exploring Computer Vision, Mobile Apps, and Machine Learning.
-   I thrive in collaborative environments and enjoy working as part of a team to tackle complex problems and drive innovation.`,
+  description: `I'm a Software Engineering graduate from the University of Málaga, currently pursuing an M.Sc. in Artificial Intelligence and Software Engineering.  
+Proficient in Python, C++, Java, and C#, I'm actively exploring areas such as Computer Vision, Human–Robot Interaction, and Machine Learning.  
+I thrive in collaborative research environments and enjoy solving complex real-world problems, especially those related to robotics and healthcare technologies.
+`,
   aboutItems: [
     {label: 'Location', text: 'Málaga, Spain', Icon: MapIcon},
     {label: 'Age', text: '21', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Spanish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Botany, Artificial Intillegence, hiking ', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Botany, Artificial Intillegence, Aerial Robotics', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Málaga', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'MAPIR research group.', Icon: BuildingOffice2Icon},
   ],
@@ -192,6 +203,14 @@ export const portfolioItems: PortfolioItem[] = [
     image: LiveTrafficEye,
   },
   {
+  title: 'Sancho ROS2 Workspace',
+  description:
+    'Modular robot system powered by ROS 2 Humble and a React + Vite web interface. Includes multimodal perception, full Nav2 navigation, and a modern control UI.',
+  url: 'https://github.com/antbaena/sancho_ws',
+  image: SanchoROS2, // asegúrate de importar o definir esta imagen
+  },
+
+  {
     title: 'A-Star-Navigator',
     description: 'Java implementation of the A* algorithm, ideal for finding optimal paths in graphs and maps.',
     url: 'https://github.com/antbaena/A-Star-Navigator',
@@ -232,7 +251,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'TicTacTouch',
     description:
-      'Classic tic-tac-toe game made in C++ using .NET with an intuitive GUI and different levels of difficulties. (In development)',
+      'Classic tic-tac-toe game made in C++ using .NET with an intuitive GUI and different levels of difficulties.',
     url: 'https://github.com/antbaena/TicTacTouch',
     image: tictac,
   },
@@ -243,7 +262,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: '2021-2025',
+    date: '2021- July 2025',
     location: 'Universidad de Málaga',
     title: 'Bachelor of software engineering',
     content: (
@@ -252,6 +271,20 @@ export const education: TimelineItem[] = [
         complex software applications. I acquired valuable skills in project management, teamwork, and problem-solving.
         My education also enhanced my ability to adapt to new technologies and apply analytical thinking in various
         situations.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2025 – July 2026 (expected)',
+    location: 'Universidad de Málaga',
+    title: 'M.Sc. in Artificial Intelligence & Software Engineering',
+    content: (
+      <p>
+        Currently enrolled in a multidisciplinary master’s program focused on advanced topics in{' '}
+        <strong>Machine Learning, Deep Learning, Software Architecture, and Computer Vision</strong>. The program
+        combines theoretical foundations with hands-on projects in applied AI, enabling the development of scalable,
+        intelligent systems. It complements my research work in human–robot interaction and strengthens my expertise in
+        software engineering best practices.
       </p>
     ),
   },
@@ -264,10 +297,10 @@ export const experience: TimelineItem[] = [
     title: 'Research Team Member',
     content: (
       <p>
-        Optimized systems and developed complex human-robot interaction systems using Python, C++, ROS2, and CUDA.
-        Collaborated in team projects to implement cloud technologies, enhancing robotic software performance and
-        scalability. Focused on creating efficient and advanced solutions for mobile robots while actively contributing
-        to group dynamics and successful project outcomes.
+        Designed and optimized advanced human–robot interaction systems using Python, C++, ROS 2, and CUDA. Collaborated
+        in multidisciplinary teams to integrate cloud technologies, improving the performance and scalability of robotic
+        software. Focused on developing efficient, real-time solutions for mobile robotics while actively contributing
+        to team dynamics and successful project delivery.
       </p>
     ),
   },
@@ -301,6 +334,11 @@ export const contact: ContactSection = {
       text: 'antbaena',
       href: 'https://github.com/antbaena',
     },
+    {
+      type: ContactType.WebSite,
+      text: 'Researcher Profile',
+      href: 'https://mapir.isa.uma.es/mapirwebsite/?p=4094',
+    },
   ],
 };
 
@@ -327,6 +365,7 @@ export const Skills: programmingLanguages = {
       image:
         'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/c.svg',
     },
+    {name: 'Ros2', image: 'https://pic.vsixhub.com/ce/76/a243dbe2-060a-42e0-84a2-e2d177fa174b-logo.webp'},
     {name: 'JavaScript', image: 'https://abrudz.github.io/logos/JS.svg'},
     {name: 'TypeScript', image: 'https://abrudz.github.io/logos/TypeScript.svg'},
     {
@@ -345,10 +384,6 @@ export const Skills: programmingLanguages = {
         'https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/spring.svg',
     },
     {name: 'R', image: 'https://abrudz.github.io/logos/R.svg'},
-    {
-      name: '.NET',
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png',
-    },
+
   ],
 };

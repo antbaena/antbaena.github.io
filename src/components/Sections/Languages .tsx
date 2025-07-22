@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import {FC, memo, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId,Skills} from '../../data/data';
+import {SectionId, Skills} from '../../data/data';
 import useWindow from '../../hooks/useWindow';
 import Section from '../Layout/Section';
 
